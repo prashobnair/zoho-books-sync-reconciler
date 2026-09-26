@@ -1,0 +1,13 @@
+{
+  "entities":{"fictional-india":"INR","fictional-us":"USD"},
+  "deals":[
+    {"id":"d-1","entity":"fictional-india","currency":"INR","net_amount":"1200.00"},
+    {"id":"d-2","entity":"fictional-us","currency":"USD","net_amount":"500.00"},
+    {"id":"d-3","entity":"fictional-us","currency":"USD","net_amount":"75.00"}
+  ],
+  "invoices":[
+    {"id":"i-1","deal_ref":"d-1","entity":"fictional-india","currency":"INR","net_amount":"1200.00","tax_reviewed":true,"sync_state":"ok"},
+    {"id":"i-2","deal_ref":"d-2","entity":"fictional-us","currency":"USD","net_amount":"550.00","tax_reviewed":false,"sync_state":"failed"},
+    {"id":"i-3","deal_ref":"d-2","entity":"fictional-india","currency":"INR","net_amount":"500.00","tax_reviewed":true,"sync_state":"ok"}
+  ]
+}
